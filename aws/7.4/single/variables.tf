@@ -12,15 +12,15 @@ variable "az1" {
 }
 
 variable "vpccidr" {
-  default = "10.1.0.0/16"
+  default = "10.10.0.0/16"
 }
 
 variable "publiccidraz1" {
-  default = "10.1.0.0/24"
+  default = "10.10.0.0/24"
 }
 
 variable "privatecidraz1" {
-  default = "10.1.1.0/24"
+  default = "10.10.1.0/24"
 }
 
 
