@@ -3,7 +3,7 @@
 #variable "secret_key" {}
 
 variable "region" {
-  default = "ap-south-2"
+  default = "ap-south-1"
 }
 
 // Availability zones for the region
