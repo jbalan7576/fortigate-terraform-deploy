@@ -27,7 +27,9 @@ pipeline {
 	stage('Terraform Apply'){
 				steps {
 					dir ('/var/lib/jenkins/workspace/iac-demo/aws/7.4/single') {
-						sh 'terraform ${action} --auto-approve'
+					sh 'terraform show'
+	
+					sh 'terraform ${action} --auto-approve'
 						}
 				}
 			}
