@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pipeline {
     agent any
 	tools {
@@ -35,3 +36,40 @@ pipeline {
 			}
     }
 }
+=======
+pipeline {
+    agent any
+	tools {
+		terraform 'jbalan7576-terraform'
+		}
+
+    stages {
+        stage('Git Checkout') {
+           steps{
+					git branch: 'main', url: 'https://github.com/jbalan7576/fortigate-terraform-deploy.git'
+				}
+        }
+        stage('Terraform Init') {
+            steps {
+                dir ('/var/lib/jenkins/workspace/iac-demo/aws/7.4/single') {
+						sh 'terraform init'
+						}
+            }
+        }
+        stage('Terraform Plan'){
+				steps {
+					dir ('/var/lib/jenkins/workspace/iac-demo/aws/7.4/single') {
+						sh 'terraform plan'
+						}
+				}
+			}
+	stage('Terraform Apply'){
+				steps {
+					dir ('/var/lib/jenkins/workspace/iac-demo/aws/7.4/single') {
+						sh 'terraform apply -auto-approve'
+						}
+				}
+			}
+    }
+}
+>>>>>>> 5153189d124de5299e252233bae23048c67217d6
