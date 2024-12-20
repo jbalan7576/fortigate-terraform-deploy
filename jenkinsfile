@@ -1,15 +1,20 @@
 pipeline {
     agent any
+	tools {
+		terraform 'jbalan7576-terraform'
+		}
 
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
+        stage('Git Checkout') {
+           steps{
+					git branch: 'main', url: 'https://github.com/jbalan7576/fortigate-terraform-deploy.git'
+				}
         }
-        stage('Test') {
+        stage('Terraform Init') {
             steps {
-                echo 'Testing..'
+                dir ('/var/lib/jenkins/workspace/iac-demo/aws/7.4/single') {
+						sh 'terraform init'
+						}
             }
         }
         stage('Deploy') {
