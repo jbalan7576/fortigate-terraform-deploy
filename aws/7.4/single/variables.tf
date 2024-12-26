@@ -15,12 +15,25 @@ variable "vpccidr" {
   default = "10.10.0.0/16"
 }
 
+variable "vpccidr2" {
+  default = "10.20.0.0/16"
+}
+
+
 variable "publiccidraz1" {
   default = "10.10.0.0/24"
 }
 
 variable "privatecidraz1" {
   default = "10.10.1.0/24"
+}
+
+variable "publiccidraz1-2" {
+  default = "10.20.0.0/24"
+}
+
+variable "privatecidraz102" {
+  default = "10.20.1.0/24"
 }
 
 
