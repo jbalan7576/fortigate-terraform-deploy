@@ -41,7 +41,7 @@ resource "aws_vpc" "fgtvm-vpc2" {
 
 resource "aws_subnet" "publicsubnetaz1-2" {
   vpc_id            = aws_vpc.fgtvm-vpc2.id
-  cidr_block        = var.publiccidraz2
+  cidr_block        = var.publiccidraz1-2
   availability_zone = var.az1
   tags = {
     Name = "public subnet az1"
@@ -50,7 +50,7 @@ resource "aws_subnet" "publicsubnetaz1-2" {
 
 resource "aws_subnet" "privatesubnetaz2" {
   vpc_id            = aws_vpc.fgtvm-vpc2.id
-  cidr_block        = var.privatecidraz2
+  cidr_block        = var.privatecidraz1-2
   availability_zone = var.az1
   tags = {
     Name = "private subnet az1"

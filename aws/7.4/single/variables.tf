@@ -32,7 +32,7 @@ variable "publiccidraz1-2" {
   default = "10.20.0.0/24"
 }
 
-variable "privatecidraz102" {
+variable "privatecidraz1-2" {
   default = "10.20.1.0/24"
 }
 
