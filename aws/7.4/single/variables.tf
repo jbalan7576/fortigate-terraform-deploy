@@ -21,19 +21,19 @@ variable "vpccidr2" {
 
 
 variable "publiccidraz1" {
-  default = "10.10.2.0/24"
+  default = "10.10.6.0/24"
 }
 
 variable "privatecidraz1" {
-  default = "10.10.4.0/24"
+  default = "10.10.8.0/24"
 }
 
 variable "publiccidraz1-2" {
-  default = "10.20.2.0/24"
+  default = "10.20.6.0/24"
 }
 
 variable "privatecidraz1-2" {
-  default = "10.20.4.0/24"
+  default = "10.20.8.0/24"
 }
 
 
