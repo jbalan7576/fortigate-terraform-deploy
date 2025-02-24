@@ -3,12 +3,12 @@
 #variable "secret_key" {}
 
 variable "region" {
-  default = "ap-south-1"
+  default = "ap-south-2"
 }
 
 // Availability zones for the region
 variable "az1" {
-  default = "ap-south-1b"
+  default = "ap-south-2b"
 }
 
 variable "vpccidr" {
@@ -21,19 +21,19 @@ variable "vpccidr2" {
 
 
 variable "publiccidraz1" {
-  default = "10.10.0.0/24"
+  default = "10.10.2.0/24"
 }
 
 variable "privatecidraz1" {
-  default = "10.10.1.0/24"
+  default = "10.10.4.0/24"
 }
 
 variable "publiccidraz1-2" {
-  default = "10.20.0.0/24"
+  default = "10.20.2.0/24"
 }
 
 variable "privatecidraz1-2" {
-  default = "10.20.1.0/24"
+  default = "10.20.4.0/24"
 }
 
 
