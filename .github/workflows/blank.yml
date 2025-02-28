@@ -64,7 +64,7 @@ jobs:
 
             # Run the Scan
 
-            docker run --env-file env.list -v "$(pwd):/app/src" lacework/codesec-iac:latest
+            docker run --env-file env.list -v "$(pwd):/app/src" lacework/codesec-iac:latest lacework iac scan
 
            
 
