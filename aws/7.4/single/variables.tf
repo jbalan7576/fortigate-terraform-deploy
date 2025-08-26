@@ -16,7 +16,7 @@ variable "vpccidr" {
 }
 
 variable "vpccidr2" {
-  default = "10.20.0.0/16"
+  default = "10.30.0.0/16"
 }
 
 
