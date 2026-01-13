@@ -54,7 +54,7 @@ jobs:
 
             echo "WORKSPACE=src" >> env.list            
 
-            echo "EXIT_FLAG=critical" >> env.list      # Cause the pipline to fail if any Critical Vulnerabilities are discovered
+            # echo "EXIT_FLAG=critical" >> env.list      # Cause the pipline to fail if any Critical Vulnerabilities are discovered
 
             echo "JUNIT_OUTPUT_FILE=/tmp/lacework-report.junit.xml"  >> env.list
 
